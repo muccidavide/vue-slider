@@ -27,6 +27,10 @@ img{
     width: 80%;
 }
 
+.img_slider img{
+    transform: translateY(-13%);
+}
+
 .thumbnails{
     display: flex;
     width: 20%;

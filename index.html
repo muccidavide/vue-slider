@@ -13,14 +13,10 @@
         <div class="container">
             <div class="card">
                 <div class="img_slider">
-                    <img width="100%" src="./assets/img/01.jpg" alt="">
+                    <img width="100%" :src="'./assets/'+ nations[0].image" alt="">
                 </div>
                 <div class="thumbnails">
-                    <img class="thumb" src="./assets/img/01.jpg" alt="">
-                    <img class="thumb" src="./assets/img/02.jpg" alt="">
-                    <img class="thumb" src="./assets/img/03.jpg" alt="">
-                    <img class="thumb" src="./assets/img/04.jpg" alt="">
-                    <img class="thumb" src="./assets/img/05.jpg" alt="">
+                    <img class="thumb" v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
                 </div>
             </div>
 
