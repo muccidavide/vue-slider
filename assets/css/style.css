@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
 img{
     max-width: 100%;
 }
@@ -18,18 +23,18 @@ img{
 
 .card{
     display: flex;
-    height: 280px;
-    width: 1000px;
+    width: 900px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
 
 .img_slider{
-    width: 80%;
+    width: 85%;
 }
 
-.img_slider img{
-    transform: translateY(-13%);
+.img_slider .img{
+    width: 100%;
 }
 
 .img_details{
@@ -45,7 +50,7 @@ img{
 
 .thumbnails{
     display: flex;
-    width: 20%;
+    width: 15%;
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
@@ -54,7 +59,7 @@ img{
 }
 
 .thumb{
-    height: calc(100% / 4);
+    height: calc(100% / 5);
     display: block;
 }
 
