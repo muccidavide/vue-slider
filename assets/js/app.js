@@ -67,8 +67,8 @@ const app = new Vue ({
                 this.imageIndex = 0
             }
         },
-        selectImage(){
-            console.log('ciao');
+        selectImage(index){
+            this.imageIndex = index
     
         }
     }
