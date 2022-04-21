@@ -29,13 +29,18 @@
 
                 </div>
 
-                <div class="thumbnails">
-                    <img class="thumb" v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
+                <div class="thumbnails" >
+                    <div class="img_box" @click="selectImage">
+                        <img class="thumb"    v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
+                    </div>
+                    
+                    
                     <div class="navigator">
                         <div class="prev" @click="prevImage"><i class="fa-solid fa-chevron-up"></i></div>
                         <div class="next" @click="nextImage"><i class="fa-solid fa-chevron-down"></i></div>
                     </div>
                 </div>
+
 
             </div>
 

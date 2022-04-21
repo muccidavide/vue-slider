@@ -66,6 +66,10 @@ const app = new Vue ({
             if (this.imageIndex > 4) {
                 this.imageIndex = 0
             }
+        },
+        selectImage(){
+            console.log('ciao');
+    
         }
     }
 })
