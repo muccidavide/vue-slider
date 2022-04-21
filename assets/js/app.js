@@ -53,5 +53,19 @@ const app = new Vue ({
             
         ],
     },
-    methods: {}
+    methods: {
+        prevImage(){
+            this.imageIndex--
+            if(this.imageIndex < 0){
+                this.imageIndex = 4
+            }
+            
+        },
+        nextImage(){
+            this.imageIndex++
+            if (this.imageIndex > 4) {
+                this.imageIndex = 0
+            }
+        }
+    }
 })

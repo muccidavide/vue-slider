@@ -19,8 +19,9 @@ img{
 .card{
     display: flex;
     height: 280px;
-    width: 800px;
+    width: 1000px;
     overflow: hidden;
+    position: relative;
 }
 
 .img_slider{
@@ -31,15 +32,50 @@ img{
     transform: translateY(-13%);
 }
 
+.img_details{
+    color: white;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    text-align: right;
+    
+    
+}
+
 .thumbnails{
     display: flex;
     width: 20%;
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
+    position: relative;
+    
 }
 
 .thumb{
     height: calc(100% / 4);
     display: block;
+}
+
+.navigator{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.prev, .next{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.843);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
 }
