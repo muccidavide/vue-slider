@@ -70,6 +70,17 @@ const app = new Vue ({
         selectImage(index){
             this.imageIndex = index
     
+        },
+        play: function() {
+            let app = this;
+            this.imageIndex = setInterval(function() {
+              app.nextImage();
+            }, 3000);
+          }
+        },
+        created: function() {
+          this.play();
         }
-    }
+    
+    
 })

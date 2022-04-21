@@ -21,7 +21,7 @@
         <div class="container">
             <div class="card">
                 <div class="img_slider">
-                    <img width="100%" :src="'./assets/'+ nations[imageIndex].image" alt="">
+                    <img width="100%"  :src="'./assets/'+ nations[imageIndex].image" alt="">
                     <div class="img_details">
                         <h3>{{nations[imageIndex].title}}</h3>
                         <p>{{nations[imageIndex].text}}</p>
@@ -31,13 +31,10 @@
 
                 <div class="thumbnails" >
                     <div class="img_box" >
-                        <img :data-label="index" class="thumb" @click="selectImage(index)" v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
+                        <img class="thumb" @click="selectImage(index)" v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
                     </div>
                     <div class="prev" @click="prevImage"><i class="fa-solid fa-chevron-up"></i></div>
                     <div class="next" @click="nextImage"><i class="fa-solid fa-chevron-down"></i></div>
-                    
-                    
-
 
                 </div>
 
