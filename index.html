@@ -19,8 +19,8 @@
 
     <div id="app">
         <div class="container">
-            <div class="card">
-                <div class="img_slider">
+            <div class="card "  >
+                <div class="img_slider" @mouseenter="mouseOver" @mouseleave="mouseOver">
                     <img width="100%"  :src="'./assets/'+ nations[imageIndex].image" alt="">
                     <div class="img_details">
                         <h3>{{nations[imageIndex].title}}</h3>

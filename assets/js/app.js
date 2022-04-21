@@ -23,6 +23,7 @@ const app = new Vue ({
     el: '#app',
     data: {
         imageIndex : 0,
+        hover: false,
         nations:[
             {
                 image: 'img/01.jpg',
@@ -71,12 +72,21 @@ const app = new Vue ({
             this.imageIndex = index
     
         },
+        mouseOver: function(){
+            this.hover = !this.hover;   
+        },
         play: function() {
+     
             let app = this;
             this.imageIndex = setInterval(function() {
-              app.nextImage();
+                if (!app.hover) {
+                    app.nextImage();
+                }
+              
             }, 2000);
-          }
+        
+            }
+            
         },
         created: function() {
           this.play();
