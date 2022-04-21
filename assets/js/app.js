@@ -75,12 +75,10 @@ const app = new Vue ({
             let app = this;
             this.imageIndex = setInterval(function() {
               app.nextImage();
-            }, 3000);
+            }, 2000);
           }
         },
         created: function() {
           this.play();
         }
-    
-    
 })
