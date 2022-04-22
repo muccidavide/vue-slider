@@ -31,7 +31,7 @@
 
                 <div class="thumbnails" >
                     <div class="img_box" >
-                        <img class="thumb" @click="selectImage(index)" v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
+                        <img :class="imageIndex === index ? 'active': ''" @click="selectImage(index)" v-for="(thumb,index) in nations" :src="'./assets/'+ thumb.image" alt="">
                     </div>
                     <div class="prev" @click="prevImage"><i class="fa-solid fa-chevron-up"></i></div>
                     <div class="next" @click="nextImage"><i class="fa-solid fa-chevron-down"></i></div>
