@@ -41,11 +41,14 @@ img{
 }
 
 .img_details{
+    background-color: rgba(0, 0, 0, 0.71);
+    min-height: 6rem;
+    width: 85%;
     color: white;
-    padding: 1.5rem;
+    padding: 1rem;
     position: absolute;
     bottom: 0;
-    right: 20%;
+    right: 15%;
     text-align: right;
     
     
